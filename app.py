@@ -1,4 +1,5 @@
 
+
 from flask import Flask, jsonify, request 
 
   
@@ -18,6 +19,16 @@ ALUNOS = ["Ana", "Bruno", "Carla", "Daniel"]
 def inicio(): 
 
     return jsonify(mensagem="Olá, Fatec! A pipeline está funcionando.") 
+
+  
+
+  
+
+@app.get("/saude") 
+
+def saude(): 
+
+    return jsonify(status="ok") 
 
   
 
